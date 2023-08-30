@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  font-family: "SF", sans-serif;
+  padding: 20px;
+}
+h1 {
+  font-family:"SF Bold";
+  font-size:50px;
+  cursor:default;
+}
+@font-face {
+  font-family: 'SF';
+  src: url(./fonts/sf.OTF);
+}
+@font-face {
+  font-family: 'SF Bold';
+  src: url(./fonts/sf_bold.OTF);
+}
+.todo-container {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius:15px;
+  background-color: white;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-input input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family:"SF";
+}
+
+.todo-input button {
+  padding: 5px 10px;
+  background-color: #32A431;
+  border: 1px solid #32A431;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family:"SF";
+  transition: all .1s ease-in-out; 
+}
+.todo-input button:hover {
+  background-color:white;
+  color:#32A431;
+  border:1px solid #32A431;
+}
+.del {
+  font-family:"SF";
+  background-color:#F32013;
+  color:white;
+  padding: 5px 10px;
+  border: 1px solid #F32013;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all .1s ease-in-out;
+
+}
+.del:hover {
+  background-color:white;
+  color:#F32013;
+  border:1px solid #F32013;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor:default;
+}
